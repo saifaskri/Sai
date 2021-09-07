@@ -1,0 +1,323 @@
+.overlay{
+content: "";
+width: 100%;
+height: 100%;
+position: absolute;
+top: 0;
+left: 0;
+background-color: #eee
+}
+.overlay-black{
+content: "";
+width: 100%;
+height: 100%;
+position: absolute;
+top: 0;
+left: 0;
+background-color: rgb(0, 0, 0,0.4);
+}
+/* start Cantacter nous section */
+.contact-father{
+display: flex;
+box-sizing: border-box;
+flex-wrap: wrap;
+}
+.contact-father a{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    }  
+
+/* left block */
+.contact-father .info{
+    flex: 50%;
+    background-color: rgb(226, 85, 34);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0 50px 100px;
+    
+}
+
+@media (max-width : 767px) {
+    .contact-father .info{
+      padding: 20px 0 50px 0px;
+      flex: 100%;
+
+    }   
+   
+}
+
+@media (max-width : 991px) {
+    .contact-father .info{
+      padding: 20px 0 50px 0px;
+        
+    }   
+}
+
+.contact-father .info ul{
+list-style: none;
+margin: 0 !important;
+padding: 0;
+}
+
+.contact-father.info ul li{
+font-size: 20px;
+}
+
+.contact-father .info ul li::before{
+content: "\f30b";
+font-family: "Font Awesome 5 Free"; 
+font-weight: 900; 
+font-size: 25px;
+color: rgb(241, 241, 241);
+margin-right: 10px;
+position: relative;
+top: 5px;
+}
+
+
+
+.contact-father .info .contact-btn{
+display: flex;
+justify-content: center;
+margin-top: 20px;
+}
+
+
+/* rigth block */
+.contactnous-foto{
+flex: 50%;
+}
+
+.contactnous-foto img {
+max-width: 100%;
+height: 100%;
+object-fit: fill;
+}
+/* end Cantacter nous section */
+
+/* START my slider */
+/* deal with the scroller */
+.slider-par::-webkit-scrollbar {
+width: 100%;
+
+}
+
+.slider-par::-webkit-scrollbar-track {
+background-color: white;
+
+}
+
+.slider-par::-webkit-scrollbar-thumb {
+/* background: linear-gradient(to left ,red, orange);  */
+background-color: gray;
+
+}
+
+/* end deal with the scroller */
+
+/* begin slider */
+
+.slider-par{
+min-height: 200px;
+width: 100%;
+display: flex;
+flex-direction: row;
+align-items: center;
+grid-column-gap: 50px;
+overflow: scroll;
+overflow-y: hidden;
+position: relative;
+padding: 40px;
+
+
+}
+
+.card{
+min-width: 300px; 
+max-width: 350px; 
+padding: 0; 
+}
+
+
+/* the prev and next icons need the font awesome lib */
+/* ================================== */
+.my-icon-slide{
+position: fixed;
+display: flex;
+width: 100%;
+justify-content: space-between;
+left: 50%;
+padding: 0 20px;
+box-sizing: border-box;
+transform: translateX(-50%);
+z-index: 4;
+font-size: 40px;
+color: gray;
+opacity: 0.5;
+/* here to see the icons */
+display: none;
+}
+
+@media (max-width:991px) {
+    .my-icon-slide{
+        display: none;
+    } 
+}
+/* ================================== */
+    
+/* end slider */
+
+
+
+
+
+ /* start QHSE section  */
+ .qhse-father{
+display: flex;
+flex-direction: column;
+position: relative;
+padding: 100px 50px 100px 150px;
+}
+
+.qhse-father img{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;  
+    z-index: 0;
+}
+
+@media (max-width: 767px) {
+    .qhse-father{
+        padding: 100px  50px;
+
+    }  
+}
+
+.qhse-father a{
+text-decoration: none;
+color: rgb(255, 38, 0);
+}
+
+.qhse-father *{
+z-index: 1;
+}
+
+.qhse-father::after{
+content: "";
+width: 100%;
+height: 100%;
+position: absolute;
+top: 0;
+left: 0;
+background-color: rgba(0, 0, 0, 0.4);
+}
+
+ /* first p tag */
+.qhse-father p:first-of-type{
+    text-transform: uppercase;
+    color: white;
+
+}
+
+/* last p tag */
+.qhse-father p:last-of-type{
+    color: white;
+    font-weight: 400;
+    font-style: italic;
+}
+
+.qhse-father h2 {
+flex: 30%;
+color: white;
+
+}
+
+.qhse-father h3{
+color: rgb(226, 85, 34);
+align-self: flex-end;
+}
+
+.qhse-father h3::after{
+    content: "\f30b";
+    font-family: "Font Awesome 5 Free"; 
+    font-weight: 900; 
+    font-size: 25px;
+    color: rgb(255, 38, 0);
+    margin-left: 10px;
+    position: relative;
+    top:  2px;
+    }
+
+ /* end QHSE section  */
+
+
+ /* start footer */
+ .footer-father{
+     padding: 50px 40px;
+     background-color: #063970;
+     color: white;
+ }
+.footer-father .icons{
+    font-size: 50px;
+    margin-top: 20px;
+    margin-bottom: 20px !important;
+    color: white;
+
+}
+
+.footer-father .icons i{
+margin-right: 30px;
+}
+
+.footer-father .icons a{
+    text-decoration: none;
+    color: white;
+}
+
+.mycenter ul{
+list-style: none;
+padding: 0;
+margin: 0;
+margin-bottom: 20px;
+}
+
+@media (max-width:767px) {
+    .fix{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+    }
+}
+
+.footer-father .last-p{
+    display: flex;
+    margin-top: -40px;
+    justify-content: center;
+}
+
+.footer-father img{
+    max-height: 30px;
+    margin-right: 5px;
+    position: relative;
+    bottom: 2px;
+}
+
+
+
+.mycenter ul li::before{
+    content: "-";
+    margin-right: 4px;
+}
+
+
+
+
+  /* end footer */
+
